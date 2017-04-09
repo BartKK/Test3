@@ -13,22 +13,13 @@ Forecast for:<br>
     <div class="row">
 
         <div class="col-md-12">
+              <weather-report
+                weather-day="w"
+                formated-date="formatedDate(date)"
+                convert-to-celsius="convertToCelsius(dayTimeTemp)"
+                date-format="'yyyy-MM-dd'">
+      </weather-report>
 
-            <div class="panel panel-default">
-
-                <div class="panel-heading">
-
-                    <h3 class="panel-title">{{ angularDate(w.dt) | date: 'yyyy-MM-dd' }}</h3>
-
-                </div>
-
-                <div class="panel-body">
-
-                    Daytime temperature: {{ convertToCelsius(w.temp.day)}}
-
-                </div>
-
-            </div>
 
         </div>
 

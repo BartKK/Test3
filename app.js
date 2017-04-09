@@ -74,9 +74,31 @@ weatherApp.controller('forecastController', ['$scope', '$resource', '$routeParam
             }
         };
 
-        $scope.angularDate = function(data) {
+        $scope.formatedDate = function(data) {
             return (data * 1000);
         };
 
     }
 ]);
+
+
+// DIRECTIVES
+
+weatherApp.directive('weatherReport', function() {
+  return {
+    restrict: 'E',
+    templateUrl: 'directives/weatherReport.html',
+    replace: true,
+    scope: {
+      // '<' one-way data binding
+      // '=' two-way data binding
+      // '&' function/expression
+      // '@' one-way data binding
+      weatherDay: '<',
+      formatedDate: '&',
+      convertToCelsius: '&',
+      dateFormat: '<'
+    }
+
+  }
+});

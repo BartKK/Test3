@@ -1,0 +1,30 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ludaxord/WeatherAppAngular.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ludaxord/WeatherAppAngular/issues"
+  },
+  "homepage": "https://github.com/Ludaxord/WeatherAppAngular#readme",
+  "devDependencies": {
+    "express": "^4.15.2",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "angular": "1.5.11",
+    "angular-resource": "1.5.11",
+    "angular-route": "1.5.11",
+    "bootstrap": "^3.3.7"
+  }
+}

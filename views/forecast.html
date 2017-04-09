@@ -1,3 +1,13 @@
+
+
+<hr />
+Forecast for:<br>
+ <a href="#/forecast/2" ng-class="{ 'bg-primary' : days === '2' }">2</a> days<br>
+ <a href="#/forecast/3" ng-class="{ 'bg-primary' : days === '3' }">3</a> days<br>
+ <a href="#/forecast/4" ng-class="{ 'bg-primary' : days === '4' }">4</a> days<br>
+
+<hr />
+
 <div ng-repeat="w in weatherResult.list">
 
     <div class="row">
@@ -8,7 +18,7 @@
 
                 <div class="panel-heading">
 
-                    <h3 class="panel-title">{{ w.dt }}</h3>
+                    <h3 class="panel-title">{{ angularDate(w.dt) | date: 'yyyy-MM-dd' }}</h3>
 
                 </div>
 
